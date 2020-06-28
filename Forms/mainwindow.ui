@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>653</width>
+    <height>534</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>10</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>欢迎来到菜农信息管理系统</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>120</y>
+      <width>631</width>
+      <height>361</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>653</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>载入保存</string>
+    </property>
+    <addaction name="actioncategory"/>
+    <addaction name="actionvegetable"/>
+    <addaction name="actionplant"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionload"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>数据</string>
+    </property>
+    <widget class="QMenu" name="menuSearch">
+     <property name="title">
+      <string>Search</string>
+     </property>
+     <addaction name="actionFindCategory"/>
+     <addaction name="actionSearchVeg"/>
+     <addaction name="actionSearchPlant_2"/>
+    </widget>
+    <widget class="QMenu" name="menuAdd">
+     <property name="title">
+      <string>Add</string>
+     </property>
+     <addaction name="actionAddVeg_2"/>
+     <addaction name="actionAddCategory"/>
+     <addaction name="actionAddPlant"/>
+    </widget>
+    <widget class="QMenu" name="menuDelete">
+     <property name="title">
+      <string>Delete</string>
+     </property>
+     <addaction name="actionDeleteCategory"/>
+     <addaction name="actionDeleteVeg"/>
+     <addaction name="actionDeletePlant"/>
+    </widget>
+    <widget class="QMenu" name="menuEdit">
+     <property name="title">
+      <string>Edit</string>
+     </property>
+     <addaction name="actionEditCategory"/>
+     <addaction name="actionEditVeg"/>
+     <addaction name="actionEditPlant"/>
+    </widget>
+    <addaction name="menuSearch"/>
+    <addaction name="menuAdd"/>
+    <addaction name="menuDelete"/>
+    <addaction name="menuEdit"/>
+   </widget>
+   <widget class="QMenu" name="menustatics">
+    <property name="title">
+     <string>统计</string>
+    </property>
+    <addaction name="actionstaticVeg"/>
+    <addaction name="actionstaticArea"/>
+   </widget>
+   <widget class="QMenu" name="menuexport">
+    <property name="title">
+     <string>导入导出</string>
+    </property>
+    <addaction name="actionImport"/>
+    <addaction name="actionExport"/>
+    <addaction name="actionExportCategory"/>
+    <addaction name="actionExportYear"/>
+    <addaction name="actionExportCustom"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menustatics"/>
+   <addaction name="menuexport"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionStart">
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </action>
+  <action name="actioncategory">
+   <property name="text">
+    <string>category</string>
+   </property>
+  </action>
+  <action name="actionvegetable">
+   <property name="text">
+    <string>vegetable</string>
+   </property>
+  </action>
+  <action name="actionplant">
+   <property name="text">
+    <string>plant</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="actionAddVeg">
+   <property name="text">
+    <string>AddVeg</string>
+   </property>
+  </action>
+  <action name="actionFindCategory">
+   <property name="text">
+    <string>SearchCategory</string>
+   </property>
+  </action>
+  <action name="actionSearchVeg">
+   <property name="text">
+    <string>SearchVeg</string>
+   </property>
+  </action>
+  <action name="actionDeleteCategory">
+   <property name="text">
+    <string>DeleteCategory</string>
+   </property>
+  </action>
+  <action name="actionAddVeg_2">
+   <property name="text">
+    <string>AddVeg</string>
+   </property>
+  </action>
+  <action name="actionSearchPlant_2">
+   <property name="text">
+    <string>SearchPlant</string>
+   </property>
+  </action>
+  <action name="actionAddCategory">
+   <property name="text">
+    <string>AddCategory</string>
+   </property>
+  </action>
+  <action name="actionAddPlant">
+   <property name="text">
+    <string>AddPlant</string>
+   </property>
+  </action>
+  <action name="actionDeleteVeg">
+   <property name="text">
+    <string>DeleteVeg</string>
+   </property>
+  </action>
+  <action name="actionDeletePlant">
+   <property name="text">
+    <string>DeletePlant</string>
+   </property>
+  </action>
+  <action name="actionEditCategory">
+   <property name="text">
+    <string>EditCategory</string>
+   </property>
+  </action>
+  <action name="actionEditVeg">
+   <property name="text">
+    <string>EditVeg</string>
+   </property>
+  </action>
+  <action name="actionEditPlant">
+   <property name="text">
+    <string>EditPlant</string>
+   </property>
+  </action>
+  <action name="actionstaticVeg">
+   <property name="text">
+    <string>staticVeg</string>
+   </property>
+  </action>
+  <action name="actionstaticArea">
+   <property name="text">
+    <string>staticArea</string>
+   </property>
+  </action>
+  <action name="actionImport">
+   <property name="text">
+    <string>Import</string>
+   </property>
+  </action>
+  <action name="actionload">
+   <property name="text">
+    <string>load</string>
+   </property>
+  </action>
+  <action name="actionExport">
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </action>
+  <action name="actionExportCategory">
+   <property name="text">
+    <string>ExportCategory</string>
+   </property>
+  </action>
+  <action name="actionExportYear">
+   <property name="text">
+    <string>ExportYear</string>
+   </property>
+  </action>
+  <action name="actionExportCustom">
+   <property name="text">
+    <string>ExportCustom</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+ <slots>
+  <slot>on_actionCategoryDisplay_triggered()</slot>
+ </slots>
+</ui>

@@ -3,4 +3,4 @@ HI, here is another test!
 2222222222222222222
 333333333333333333
 Git has a mutable index called stage.
-Git tracks changes.
+Git tracks changes of files.
